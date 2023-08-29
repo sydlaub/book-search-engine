@@ -1,10 +1,13 @@
+/* eslint-disable no-unused-vars */
 import { useState, useEffect } from 'react';
 import {
   Container,
   Card,
   Button,
   Row,
-  Col
+  Col,
+  Jumbotron,
+  CardColumns
 } from 'react-bootstrap';
 import { Navigate } from "react-router-dom";
 
@@ -90,21 +93,20 @@ if (loading) {
 
 return (
   <>
-    <div fluid className="text-light bg-dark p-5">
+    <Jumbotron fluid className="text-light bg-dark p-5">
       <Container>
         <h1>Viewing saved books!</h1>
       </Container>
-    </div>
+    </Jumbotron>
     <Container>
       <h2 className='pt-5'>
         {me.savedBooks.length
           ? `Viewing ${me.savedBooks.length} saved ${me.savedBooks.length === 1 ? 'book' : 'books'}:`
           : 'You have no saved books!'}
       </h2>
-      <Row>
+      <CardColumns>
         {me.savedBooks.map((book) => {
           return (
-            <Col md="4">
               <Card key={book.bookId} border='dark'>
                 {book.image ? <Card.Img src={book.image} alt={`The cover for ${book.title}`} variant='top' /> : null}
                 <Card.Body>
@@ -116,10 +118,9 @@ return (
                   </Button>
                 </Card.Body>
               </Card>
-            </Col>
           );
         })}
-      </Row>
+      </CardColumns>
     </Container>
   </>
 );
