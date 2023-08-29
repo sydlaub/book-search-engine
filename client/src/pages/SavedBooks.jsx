@@ -72,7 +72,7 @@ const SavedBooks = () => {
       // if success, remove boook id from local storage
       removeBookId(bookId);
     } catch (err) {
-      console.error(JSON.parse(JSON.stringify(err)));
+      console.log(JSON.parse(JSON.stringify(err)));
     }
   };
 
