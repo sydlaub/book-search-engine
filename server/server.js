@@ -39,8 +39,14 @@ async function startApolloServer(resolvers, typeDefs) {
   // app.use(routes);
 
   db.once('open', () => {
-    app.listen(PORT, () => console.log(`🌍 Now listening on localhost:${PORT}`);
+   httpServer.listen(PORT, () => {
+    console.log(`API server running on ${PORT}`);
     console.log(`Use GraphQL at http://localhost:${PORT}${server.graphqlPath}`);
+   });
+   
+   
+    // app.listen(PORT, () => console.log(`🌍 Now listening on localhost:${PORT}`);
+    // console.log(`Use GraphQL at http://localhost:${PORT}${server.graphqlPath}`);
   });
 };
 
