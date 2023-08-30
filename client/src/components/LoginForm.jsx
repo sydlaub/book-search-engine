@@ -1,4 +1,5 @@
 // see SignupForm.js for comments
+/* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 import { Form, Button, Alert } from 'react-bootstrap';
 
@@ -38,7 +39,7 @@ const LoginForm = () => {
         variables: {...userFormData},
       });
       Auth.login(data.login.token);
-      
+
     } catch (err) {
       console.error(err);
       setShowAlert(true);
