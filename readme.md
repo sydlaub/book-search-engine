@@ -81,7 +81,7 @@ Collaborators include teachers, TAs, tutors and fellow students in the Columbia 
 
 ## Questions
 
-If you have further questions, you can reach me at lauracole1900@comcast.net. For more of my work, see [my GitHub](https://github.com/sydlaub).
+If you have further questions, you can reach me at syd.laub18@gmail.com. For more of my work, see [my GitHub](https://github.com/sydlaub).
 
 ## Badges
 
