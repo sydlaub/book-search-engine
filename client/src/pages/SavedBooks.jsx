@@ -6,9 +6,10 @@ import {
   Button,
   Row,
   Col,
-  Jumbotron,
-  CardColumns
+  // Jumbotron,
+  // Card
 } from 'react-bootstrap';
+// import { Jumbotron } from 'react-bootstrap/Jumbotron'
 import { Navigate } from "react-router-dom";
 
 // import { getMe, deleteBook } from '../utils/API';
@@ -93,18 +94,19 @@ if (loading) {
 
 return (
   <>
-    <Jumbotron fluid className="text-light bg-dark p-5">
+    {/* <Jumbotron fluid className="text-light bg-dark p-5"> */}
       <Container>
         <h1>Viewing saved books!</h1>
       </Container>
-    </Jumbotron>
+    {/* </Jumbotron> */}
     <Container>
       <h2 className='pt-5'>
         {me.savedBooks.length
           ? `Viewing ${me.savedBooks.length} saved ${me.savedBooks.length === 1 ? 'book' : 'books'}:`
           : 'You have no saved books!'}
       </h2>
-      <CardColumns>
+      {/* <CardColumns> */}
+        <div>
         {me.savedBooks.map((book) => {
           return (
               <Card key={book.bookId} border='dark'>
@@ -120,7 +122,8 @@ return (
               </Card>
           );
         })}
-      </CardColumns>
+        </div>
+      {/* </CardColumns> */}
     </Container>
   </>
 );

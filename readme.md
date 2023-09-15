@@ -85,4 +85,4 @@ If you have further questions, you can reach me at syd.laub18@gmail.com. For mor
 
 ## Badges
 
-[![License badge](https://img.shields.io/badge/license-MIT-343a40)](./LICENSE) [
+[![License badge](https://img.shields.io/badge/license-MIT-343a40)](./LICENSE)
